@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Country Selection</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="mb-4 text-center text-light">Country Selection:</h2>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="country-dropdown " class="text-light">Select a Country:</label>
+        <select id="country-dropdown" class="form-control">
+          <option value="">Select Country</option>
+          <option value="Egypt">Egypt</option>
+          <option value="Germany">Germany</option>
+          <option value="Syria">Syria</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-warning p-2 m-3" onclick="addCountry()">Add to Grid</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2 class="mt-4 text-light">Selected Countries</h2>
+    <div class="table-responsive ">
+      <table id="grid-view" class="table table-bordered mt-3 border-secondary">
+        <thead>
+          <tr>
+            <th>Country Name</th>
+            <th>Delete Country</th>
+            <th>Edit Country</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  
+  
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
